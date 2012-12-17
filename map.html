@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+  <head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" media="all" href="/stylesheets/styles.css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js">
+    </script>
+    <script type="text/javascript" src="/javascripts/jquery.geekga.js">
+    </script>
+    <script type="text/javascript" src="/javascripts/fx.js">
+    </script>
+    <style type="text/css">
+        .h-one {float:none; width:auto;}
+        .h-one .b-content-top-back {width:auto;}
+    </style>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <base href="http://urbantrail.ru/" />
+  </head>
+  <body>
+    <div class="l-flash">
+      <p id="flash">
+        <script type="text/javascript">
+            var flashvars = {};
+            var params = {};
+            params.wmode = "transparent";
+            var attributes = {};
+            swfobject.embedSWF("/flash/main.swf", "flash", "766", "313", "9.0.0", false, flashvars, params, attributes);
+        </script>
+      </p>
+      <a class="logo" href="/" title="на главную">на главную</a>
+      <h1 class="b-slogan">
+        <strong class="first-word">квадроциклы</strong><br />аксессуары<br /><strong class="last-word">тюнинг, запчасти</strong>
+      </h1>
+      <a class="zapchasti" href="zapchasti.html" title="запчасти"></a>
+    </div>
+    <div class="l-content">
+      <div class="h-list h-one">
+        <div class="b-breadcrumbs">
+<ul class="B_crumbBox"><li><span class="B_firstCrumb"><a class="B_homeCrumb" href="/glavnaya_stranicza.html" title="Перейти на главную">Главная</a></span></li><li><span class="B_lastCrumb"><span class="B_currentCrumb">Карта проезда</span></span></li></ul>
+        </div>
+        <div class="b-content">
+          <div class="b-content-top-back">
+            <div class="b-content-top-shadow"></div>
+          </div>
+          <h2 class="b-content-header">Карта проезда</h2>
+          <div class="b-content-text">
+<script src="http://api-maps.yandex.ru/1.1/?key=ACXKEEwBAAAARApkZAIA-L-90MKLL2ww9zDWBWHd-V0Vhx0AAAAAAAAAAABFUYAYK2IjnNpFoNwIWGpx5pW8Cw==&wizard=constructor" type="text/javascript"></script>
+<script type="text/javascript">
+    YMaps.jQuery(function () {
+        var map = new YMaps.Map(YMaps.jQuery("#YMapsID-191")[0]);
+        map.setCenter(new YMaps.GeoPoint(37.23000,55.67990), 10, YMaps.MapType.SCHEMA);
+        map.addControl(new YMaps.Zoom());
+        map.addControl(new YMaps.ToolBar());
+        map.addControl(new YMaps.TypeControl());
+
+        YMaps.Styles.add("constructor#pmywlPlacemark", {
+            iconStyle : {
+                href : "http://api-maps.yandex.ru/i/0.3/placemarks/pmywl.png",
+                size : new YMaps.Point(36,41),
+                offset: new YMaps.Point(-13,-40)
+            }
+        });
+
+
+        YMaps.Styles.add("constructor#006CFFc85Polyline", {
+            lineStyle : {
+                strokeColor : "006CFFc8",
+                strokeWidth : 5
+            }
+        });
+
+        YMaps.Styles.add("constructor#FF3732c85Polyline", {
+            lineStyle : {
+                strokeColor : "FF3732c8",
+                strokeWidth : 5
+            }
+        });
+
+        YMaps.Styles.add("constructor#33CC00ff5Polyline", {
+            lineStyle : {
+                strokeColor : "33CC00ff",
+                strokeWidth : 5
+            }
+        });
+       map.addOverlay(createObject("Placemark", new YMaps.GeoPoint(37.009463,55.630272), "constructor#pmywlPlacemark", "Голицыно, Можайское шоссе,<br />дом 2а ТЦ \"Волин\", 2 этаж, офис №13<br />(495) 979-60-10"));
+       map.addOverlay(createObject("Polyline", [new YMaps.GeoPoint(37.386067,55.713545),new YMaps.GeoPoint(37.369587,55.71088),new YMaps.GeoPoint(37.365553,55.709814),new YMaps.GeoPoint(37.361734,55.708263),new YMaps.GeoPoint(37.345147,55.699103),new YMaps.GeoPoint(37.337744,55.693819),new YMaps.GeoPoint(37.318464,55.676195),new YMaps.GeoPoint(37.299355,55.658659),new YMaps.GeoPoint(37.296565,55.657228),new YMaps.GeoPoint(37.293947,55.656281),new YMaps.GeoPoint(37.253693,55.648905),new YMaps.GeoPoint(37.237089,55.64301),new YMaps.GeoPoint(37.201431,55.627403),new YMaps.GeoPoint(37.194393,55.626189),new YMaps.GeoPoint(37.144702,55.623081),new YMaps.GeoPoint(37.094981,55.616053),new YMaps.GeoPoint(37.066227,55.610466),new YMaps.GeoPoint(37.005018,55.603263),new YMaps.GeoPoint(37.001327,55.608511),new YMaps.GeoPoint(37.020124,55.623375),new YMaps.GeoPoint(37.02124,55.629688),new YMaps.GeoPoint(37.009824,55.629785)], "constructor#006CFFc85Polyline", "Проезд от Москвы по Минскому шоссе"));
+       map.addOverlay(createObject("Polyline", [], "constructor#FF3732c85Polyline", ""));
+       map.addOverlay(createObject("Polyline", [new YMaps.GeoPoint(37.385973,55.713553),new YMaps.GeoPoint(37.369494,55.710839),new YMaps.GeoPoint(37.36546,55.709701),new YMaps.GeoPoint(37.361941,55.708271),new YMaps.GeoPoint(37.345072,55.699123),new YMaps.GeoPoint(37.336223,55.69386),new YMaps.GeoPoint(37.329356,55.69289),new YMaps.GeoPoint(37.324212,55.690585),new YMaps.GeoPoint(37.320864,55.688598),new YMaps.GeoPoint(37.314296,55.687195),new YMaps.GeoPoint(37.31112,55.687195),new YMaps.GeoPoint(37.29887,55.684962),new YMaps.GeoPoint(37.282833,55.678294),new YMaps.GeoPoint(37.279399,55.675772),new YMaps.GeoPoint(37.272533,55.672813),new YMaps.GeoPoint(37.256365,55.667934),new YMaps.GeoPoint(37.239253,55.662279),new YMaps.GeoPoint(37.230661,55.66092),new YMaps.GeoPoint(37.221017,55.661139),new YMaps.GeoPoint(37.211029,55.660872),new YMaps.GeoPoint(37.198907,55.660144),new YMaps.GeoPoint(37.194186,55.660362),new YMaps.GeoPoint(37.189294,55.659586),new YMaps.GeoPoint(37.176505,55.65648),new YMaps.GeoPoint(37.16813,55.655446),new YMaps.GeoPoint(37.158896,55.654023),new YMaps.GeoPoint(37.151317,55.653022),new YMaps.GeoPoint(37.147911,55.653313),new YMaps.GeoPoint(37.13907,55.654866),new YMaps.GeoPoint(37.133706,55.656443),new YMaps.GeoPoint(37.129028,55.658214),new YMaps.GeoPoint(37.116604,55.658238),new YMaps.GeoPoint(37.109952,55.657413),new YMaps.GeoPoint(37.10064,55.656346),new YMaps.GeoPoint(37.095534,55.655424),new YMaps.GeoPoint(37.090642,55.653483),new YMaps.GeoPoint(37.087552,55.651396),new YMaps.GeoPoint(37.075364,55.647319),new YMaps.GeoPoint(37.028566,55.631179),new YMaps.GeoPoint(37.025028,55.630132),new YMaps.GeoPoint(37.021318,55.629668),new YMaps.GeoPoint(37.009832,55.629765)], "constructor#33CC00ff5Polyline", "Проезд от Москвы по Можайскому шоссе"));
+       map.addOverlay(createObject("Polyline", [], "constructor#FF3732c85Polyline", ""));
+        
+        function createObject (type, point, style, description) {
+            var allowObjects = ["Placemark", "Polyline", "Polygon"],
+                index = YMaps.jQuery.inArray( type, allowObjects),
+                constructor = allowObjects[(index == -1) ? 0 : index];
+                description = description || "";
+            
+            var object = new YMaps[constructor](point, {style: style, hasBalloon : !!description});
+            object.description = description;
+            
+            return object;
+        }
+    });
+</script>
+
+<div id="YMapsID-191" style="width:675px;height:450px;color:#000;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="l-footer">
+      <div class="b-phone-foot">
+        <span>(</span>495<span>)</span> 979-60-10
+      </div>
+      <address class="b-address">
+          <a class="b-address-link" href="/map" title="Карта проезда">Голицыно, Можайское шоссе,<br />дом 2а ТЦ &laquo;Волин&raquo;,<br />2 этаж, офис №13</a>
+      </address>
+      <div class="company-name">ООО &laquo;УрбанТрэйл&raquo;<br />
+          <a href="mailto:info@urbantrail.ru">info@urbantrail.ru</a>
+      </div>
+    </div>
+    <!-- MySQL: 0.0005 s, 0 request(s), PHP: 0.0016 s, total: 0.0022 s, document retrieved from cache -->
+  </body>
+</html>
